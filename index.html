@@ -30,10 +30,17 @@ img {
 }
 
 #Login {
- top: 50%;
-        left:50%;
-    align-items: center;
-	
+ /* top: 50%;
+ left:50%; */
+ align-items: center;	
+}
+
+#toplf {
+  float: left;	
+}
+
+#toprf {
+  float: right;	
 }
 
 a {
@@ -58,21 +65,28 @@ a:hover {
 .preview img {
 	border: 4px solid #444;
 	padding: 1px;
-	width: 800px;
+	/*width: 800px;*/
+  height: 270px;
 }
 </style> </head>
   <body>
+    <div id="toplf">
+        <a href="https://umrlastig.github.io/" target="_blank"><img src="images/lastig_logo.png" width="150" height="50"  alt="logo lastig"></a>
+        <p><a href="https://umrlastig.github.io/geovis/">GeoVIS Team</a></p>
+    </div>
+    <div id="toprf">
+        <a href="https://github.com/itownsResearch" target="_blank"><img src="images/itownsLogo.png" width="160" height="150"  alt="logo"></a>
+    </div>
     <div id="Login" >
-      <h2>
-        <p align="center"> Welcome to iTowns Research! </p>
-      </h2>
+      <h1>
+        <p align="center"> Welcome to iTowns Research!</p>
+      </h1>
       <h3>
         <p align="center">iTowns Research is dedicated to projects that uses
           iTowns (a 3D web geovisualization library) for Research or Learning.</p>
       </h3>
-      <a href="https://github.com/itownsResearch" target="_blank"><img src="images/itownsLogo.png" width="320" height="301"  alt="logo" class="centerImage"></a>
-      <p align="center"> Informations/Doc: <a href="https://github.com/itownsResearch/docs/wiki"
-          target="_blank">https://github.com/itownsResearch/docs/wiki</a></p>
+      <!-- <a href="https://github.com/itownsResearch" target="_blank"><img src="images/itownsLogo.png" width="320" height="301"  alt="logo" class="centerImage"></a> -->
+      <!-- <p align="center"> Informations/Doc: <a href="https://github.com/itownsResearch/docs/wiki" target="_blank">https://github.com/itownsResearch/docs/wiki</a></p> -->
 
       <!-- <a href="https://github.com/itownsResearch" target="_blank">  </a>
         <img src="images/examples.jpg" class="centerImage" alt="" title="examples" width="640" height="281" alt="examples" usemap="#examples"> 
@@ -84,12 +98,14 @@ a:hover {
         <img onmouseover="preview.src=img2.src" name="img2" src="https://github.com/umrlastig/adevaux_homepage/raw/master/img/croppedClimaticViz2.gif" title="Climatic Data Viz"/>
         <img onmouseover="preview.src=img3.src" name="img3" src="https://github.com/umrlastig/adevaux_homepage/raw/master/img/bombardementGood2.gif" title="Historical Image automatic registration"/>
         <a href="https://itownsresearch.github.io/itowns/examples/stylization.html" target="_blank"><img onmouseover="preview.src=img4.src" name="img4" src="https://github.com/umrlastig/adevaux_homepage/raw/master/img/resizedGeovis.gif" title="Geovisualisation/WEBGL/SHADERS"/></a>
-        <a href="https://itownsresearch.github.io/sealevel" target="_blank"><img onmouseover="preview.src=img5.src" name="img5" src="images/sea_level.png" title="Flooding experiments"/></a>
+        <a href="https://itownsresearch.github.io/sealevel" target="_blank"><img onmouseover="preview.src=img5.src" name="img5" src="images/sea_level_480_270.gif" title="Flooding experiments"/></a>
         <a href="https://itownsresearch.github.io/2018_TSI_vibes/examples/vibesObj.html" target="_blank"><img onmouseover="preview.src=img6.src" name="img6" src="https://github.com/itownsResearch/2018_TSI_vibes/raw/master/VIBES/texture_faces.png" title="Style Experiments"/></a>
       </div><br/>
       <div class="preview" align="center">
         <img name = "preview" src="https://github.com/umrlastig/adevaux_homepage/raw/master/img/InSituMixedReality.gif" class="centerImage">
       </div>
+
     </div>
+    <p align="center"> Informations/Doc: <a href="https://github.com/itownsResearch/docs/wiki" target="_blank">https://github.com/itownsResearch/docs/wiki</a></p>
   </body>
 </html>
